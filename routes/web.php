@@ -3,7 +3,7 @@
 $routes = [
     // this is where our routes will go
 
-    // route to homepage
+    // route to homepage (default)
     'homepage' => [
         'controller' => 'indexController', 
         'action' => 'index'

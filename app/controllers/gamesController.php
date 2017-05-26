@@ -1,5 +1,7 @@
 <?php
 
+namespace app\controllers;
+
 class gamesController
 {
     // listing action of games controller
