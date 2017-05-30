@@ -3,29 +3,25 @@
 namespace app\controllers;
 
 use \codingbootcamp\tinymvc\view as view;
+use \codingbootcamp\tinymvc\config as config;
 
 class indexController
 {
     // index action of index controller
     public function index()
     {
-        // here it would ask model for data
 
-        $submitted_text = $_GET['something'];
-
-        $navigation_view = new view('navigation');
-
-        // here it would give the data to the views and get the result
-        $homepage_view = new view('homepage/homepage');
+        var_dump($_POST);
         
+        // /resources/views/navigation.php
+        $navigation = new view('navigation');
+        $navigation->current_page = 'home';
 
+        // /resources/views/   document     .php
         $document = new view('document');
-        $document->title = 'Homepage';
-        $document->articles = ['First', 'Second'];
-        $document->text = $submitted_text;
-        $document->content = $homepage_view;
+        $document->content = '<h1>This is the homepage</h1>';
+        $document->navigation = $navigation;
 
-        // here the result gets returned
-        return $document->render();
+        return $document;
     }
 }

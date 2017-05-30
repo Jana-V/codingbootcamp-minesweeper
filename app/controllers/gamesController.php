@@ -2,11 +2,16 @@
 
 namespace app\controllers;
 
+use \codingbootcamp\tinymvc\view as view;
+
 class gamesController
 {
     // listing action of games controller
     public function listing()
     {
-        return 'This is a list of games';
+        $document = new view('document');
+        $document->title = 'List of games';
+
+        return $document;
     }
 }
