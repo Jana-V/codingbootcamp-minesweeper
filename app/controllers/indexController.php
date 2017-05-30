@@ -13,6 +13,8 @@ class indexController
 
         $submitted_text = $_GET['something'];
 
+        $navigation_view = new view('navigation');
+
         // here it would give the data to the views and get the result
         $homepage_view = new view('homepage/homepage');
         

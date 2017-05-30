@@ -2,10 +2,10 @@
 
 namespace codingbootcamp\tinymvc;
 
+// FQN: \codingbootcamp\tinymvc\view
 class view
 {
     protected $__view_file = null;
-    public $title = 'Homepage';
 
     public function __construct($view_file)
     {
