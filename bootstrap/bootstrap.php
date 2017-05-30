@@ -15,3 +15,8 @@ require_once VENDOR_DIR . '/codingbootcamp/tinymvc/config.php'; // the config cl
 require_once VENDOR_DIR . '/codingbootcamp/tinymvc/request.php'; // the request class
 require_once VENDOR_DIR . '/codingbootcamp/tinymvc/response.php'; // the response class
 require_once VENDOR_DIR . '/codingbootcamp/tinymvc/view.php'; // the view class
+
+// blackjack
+require_once VENDOR_DIR . '/theleftovers/blackjack/card.php'; // the card class
+require_once VENDOR_DIR . '/theleftovers/blackjack/database.php'; // the database class
+require_once VENDOR_DIR . '/theleftovers/blackjack/game.php'; // the game class

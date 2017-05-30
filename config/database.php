@@ -2,7 +2,7 @@
 
 $config = [
     'host' => '127.0.0.1',
-    'database' => 'minesweeper',
+    'database' => 'blackjack',
     'username' => 'root',
     'password' => 'rootroot',
     'charset' => 'utf8'

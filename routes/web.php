@@ -5,8 +5,13 @@ $routes = [
 
     // route to homepage (default)
     'homepage' => [
-        'controller' => 'indexController', 
+        'controller' => 'blackjackController', 
         'action' => 'index'
+    ],
+
+    'play' => [
+        'controller' => 'blackjackController', 
+        'action' => 'play'
     ],
 
     // route to games list

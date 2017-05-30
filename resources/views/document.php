@@ -11,11 +11,9 @@
     <?php echo isset($navigation)?$navigation:''; ?>
 
     <?php echo $content; ?>
-    This is the body of the document.
 
-    <form action="">
-        <input type="submit" value="submit">
-    </form>
+    <?php echo $list_of_games; ?>
+
 
 </body>
 </html>
